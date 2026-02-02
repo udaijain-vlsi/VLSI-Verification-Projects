@@ -22,6 +22,10 @@ It resets to 0 when the active-high reset signal is asserted.
 - Language: Verilog HDL  
 - Simulator: ModelSim (Student/Free Edition)  
 
+**Source Files**:
+- [counter.v](./counter.v) → RTL design module
+- [tb_counter.v](./tb_counter.v) → Testbench with clock generation and stimulus
+  
 ## Design File :counter.v
 module counter (
 input clk,
