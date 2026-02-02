@@ -1,4 +1,5 @@
-[counter.v.txt](https://github.com/user-attachments/files/25019838/counter.v.txt)
+[counter.v](https://github.com/user-attachments/files/25019948/counter.v)
+[counter.v](https://github.com/user-attachments/files/25019838/counter.v)
 # VLSI Verification Projects
 
 Hello! I am Udai Jain, a first-year B.Tech student in VLSI Design & Technology (with AI/ML Minor) at Vellore Institute of Technology (VIT) Vellore – Class of 2029.  
