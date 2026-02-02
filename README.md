@@ -26,7 +26,7 @@ It resets to 0 when the active-high reset signal is asserted.
 - [counter.v.txt](https://github.com/user-attachments/files/25015385/counter.v.txt)→ RTL design module
 - [tb_counter.v.txt](https://github.com/user-attachments/files/25015393/tb_counter.v.txt)→ Testbench with clock generation and stimulus
   
-**Design File :counter.v**
+## Design File :counter.v
 module counter (
 input clk,
 input rst,
@@ -38,7 +38,7 @@ else     cnt <= cnt + 1;
 end
 endmodule
 
-**Testbench File :tb_counter.v**
+## Testbench File :tb_counter.v
 module tb_counter;
 reg clk, rst;
 wire [3:0] cnt;
