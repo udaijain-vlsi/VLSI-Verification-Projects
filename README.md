@@ -1,18 +1,26 @@
-# 4-bit Synchronous Counter Verification
+# VLSI Verification Projects
 
-This is my first Verilog project – a simple 4-bit synchronous counter that increments by 1 on every positive clock edge and resets to zero when reset is high.
+Hello! I am Udai Jain, a first-year B.Tech student in VLSI Design & Technology (with AI/ML Minor) at Vellore Institute of Technology (VIT) Vellore – Class of 2029.  
 
-### What I Learned:
-- How to create a Verilog module  
-- Generating clock in a testbench  
-- Implementing and testing reset logic  
-- Analyzing waveforms for verification  
+This repository contains my learning projects in Verilog HDL and VLSI verification.  
+I am building a strong foundation in digital design and functional verification to pursue a career in VLSI (targeting verification / RTL design roles).
 
-### Tools Used:
-- ModelSim (for simulation and waveform viewing)  
+### Current Project: 4-bit Synchronous Counter Verification
 
-### Goal:
-Applying for Summer 2026 VLSI Verification internship (B.Tech VLSI Design & Technology, VIT Vellore).  
+**Description**  
+A simple 4-bit synchronous up-counter that increments by 1 on every positive clock edge.  
+It resets to 0 when the active-high reset signal is asserted.
+
+**What I Learned**  
+- Writing Verilog modules with inputs, outputs, and sequential always blocks  
+- Using non-blocking assignments (<=) for proper register behavior  
+- Creating a basic testbench: clock generation, reset stimulus, and simple checking  
+- Simulating and debugging using ModelSim waveform viewer  
+- Understanding clock period, reset timing, and overflow behavior  
+
+**Tools Used**  
+- Language: Verilog HDL  
+- Simulator: ModelSim (Student/Free Edition)  
 
 ## Design File :counter.v
 module counter (
@@ -48,4 +56,10 @@ endmodule
 ## Waveform ScreenShot
 <img width="796" height="77" alt="waveform PNG" src="https://github.com/user-attachments/assets/c66fb1c7-2282-4ed1-8abb-34087e7a8873" />
 
-Currently in the learning phase – any feedback or suggestions are welcome!
+**Goal**  
+Secure a Summer 2026 internship / trainee role in VLSI Verification or RTL Design (preferably in Bangalore – Maven Silicon, ChipXpert, or semiconductor startups).  
+Actively learning Digital System Design, Electronic Devices, and Verilog through VIT curriculum.
+
+Open to feedback, suggestions, and guidance from seniors or professionals in the VLSI domain!
+
+Thank you for visiting! 🚀 
