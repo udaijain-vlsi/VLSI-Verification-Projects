@@ -27,16 +27,16 @@ It resets to 0 when the active-high reset signal is asserted.
 - [tb_counter.v.txt](https://github.com/user-attachments/files/25015393/tb_counter.v.txt)→ Testbench with clock generation and stimulus
   
 ## Design File :counter.v
- module counter (
- input clk,
- input rst,
- output reg [3:0] cnt);
-always @(posedge clk or posedge rst) 
-begin
-if (rst) cnt <= 4'b0000;
-else     cnt <= cnt + 1;
-end
-endmodule
+    module counter (
+    input clk,
+    input rst,
+    output reg [3:0] cnt);
+    always @(posedge clk or posedge rst) 
+    begin
+    if (rst) cnt <= 4'b0000;
+    else     cnt <= cnt + 1;
+    end
+    endmodule
 
 ## Testbench File :tb_counter.v
 module tb_counter;
@@ -67,3 +67,5 @@ Actively learning Digital System Design, Electronic Devices, and Verilog through
 Open to feedback, suggestions, and guidance from seniors or professionals in the VLSI domain!
 
 Thank you for visiting! 🚀 
+
+Next up: Synchronous FIFO verification – adding in a week.
