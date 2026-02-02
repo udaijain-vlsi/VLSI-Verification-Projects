@@ -5,7 +5,7 @@ Hello! I am Udai Jain, a first-year B.Tech student in VLSI Design & Technology (
 This repository contains my learning projects in Verilog HDL and VLSI verification.  
 I am building a strong foundation in digital design and functional verification to pursue a career in VLSI (targeting verification / RTL design roles).
 
-### Current Project: 4-bit Synchronous Counter Verification
+### Current Project: 4-bit Synchronous Counter Verification 
 
 **Description**  
 A simple 4-bit synchronous up-counter that increments by 1 on every positive clock edge.  
