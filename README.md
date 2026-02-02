@@ -27,10 +27,10 @@ It resets to 0 when the active-high reset signal is asserted.
 - [tb_counter.v.txt](https://github.com/user-attachments/files/25015393/tb_counter.v.txt)→ Testbench with clock generation and stimulus
   
 ## Design File :counter.v
-module counter (
-input clk,
-input rst,
-output reg [3:0] cnt);
+ module counter (
+ input clk,
+ input rst,
+ output reg [3:0] cnt);
 always @(posedge clk or posedge rst) 
 begin
 if (rst) cnt <= 4'b0000;
