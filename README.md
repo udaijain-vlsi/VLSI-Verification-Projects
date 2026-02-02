@@ -39,23 +39,23 @@ It resets to 0 when the active-high reset signal is asserted.
     endmodule
 
 ## Testbench File :tb_counter.v
-module tb_counter;
-reg clk, rst;
-wire [3:0] cnt;
-counter dut (.clk(clk), .rst(rst), .cnt(cnt));
-initial begin
-clk = 0;
-forever #5 clk = ~clk;
-end
-initial begin
-rst = 1;     
-#15 rst = 0; 
-#200 $finish; 
-end
-always @(posedge clk) begin
-if (cnt >= 16) $display("ERROR: Counter overflow!");
-end
-endmodule
+    module tb_counter;
+    reg clk, rst;
+    wire [3:0] cnt;
+    counter dut (.clk(clk), .rst(rst), .cnt(cnt));
+    initial begin
+    clk = 0;
+    forever #5 clk = ~clk;
+    end
+    initial begin
+    rst = 1;     
+    #15 rst = 0; 
+    #200 $finish; 
+    end
+    always @(posedge clk) begin
+    if (cnt >= 16) $display("ERROR: Counter overflow!");
+    end
+    endmodule
 
 ## Waveform ScreenShot
 <img width="796" height="77" alt="waveform PNG" src="https://github.com/user-attachments/assets/c66fb1c7-2282-4ed1-8abb-34087e7a8873" />
