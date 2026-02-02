@@ -45,6 +45,7 @@ if (cnt >= 16) $display("ERROR: Counter overflow!");
 end
 endmodule
 
+## Waveform ScreenShot
 <img width="796" height="77" alt="waveform PNG" src="https://github.com/user-attachments/assets/c66fb1c7-2282-4ed1-8abb-34087e7a8873" />
 
 Currently in the learning phase – any feedback or suggestions are welcome!
