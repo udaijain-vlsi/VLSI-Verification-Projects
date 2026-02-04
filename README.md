@@ -71,3 +71,9 @@ Open to feedback, suggestions, and guidance from seniors or professionals in the
 Thank you for visiting! 🚀 
 
 Next up: Synchronous FIFO verification – adding in a week.
+
+### Added: Synchronous FIFO Verification
+- 8-deep, 8-bit wide FIFO with full/empty flags  
+- LED glows when FIFO is full (my custom twist)  
+- Files: fifo-verification/fifo.v, tb_fifo.v, waveform.png  
+- Simulation shows write/read operation and LED indicator on full condition  
