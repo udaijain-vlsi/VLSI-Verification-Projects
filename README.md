@@ -62,7 +62,7 @@ It resets to 0 when the active-high reset signal is asserted.
 <img width="796" height="77" alt="waveform PNG" src="https://github.com/user-attachments/assets/c66fb1c7-2282-4ed1-8abb-34087e7a8873" />
 **Simulation Waveform** (showing reset pulse, clock toggling, cnt incrementing from 0 to 15, and reset behavior)
 
-**Goal**  
+## Goal
 Secure a Summer 2026 internship / trainee role in VLSI Verification or RTL Design (preferably in Bangalore – Maven Silicon, ChipXpert,Mindgrove Technologies or semiconductor startups).  
 Actively learning Digital System Design, Electronic Devices, and Verilog through VIT curriculum.
 
