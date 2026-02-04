@@ -24,8 +24,8 @@ It resets to 0 when the active-high reset signal is asserted.
 - Simulator: ModelSim (Student/Free Edition)  
 
 **Source Files**:
--[counter.v.txt](https://github.com/user-attachments/files/25069137/counter.v.txt)→ RTL design module
--[tb_counter.v.txt](https://github.com/user-attachments/files/25069148/tb_counter.v.txt)→ Testbench with clock generation and stimulus
+- [counter.v.txt](https://github.com/user-attachments/files/25069137/counter.v.txt)→ RTL design module
+- [tb_counter.v.txt](https://github.com/user-attachments/files/25069148/tb_counter.v.txt)→ Testbench with clock generation and stimulus
   
 ## Design File :counter.v
     module counter (
