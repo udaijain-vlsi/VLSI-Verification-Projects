@@ -58,7 +58,7 @@ It resets to 0 when the active-high reset signal is asserted.
     end
     endmodule
 
-## Waveform ScreenS
+## Waveform Screenshot
 <img width="796" height="77" alt="waveform PNG" src="https://github.com/user-attachments/assets/c66fb1c7-2282-4ed1-8abb-34087e7a8873" />
 **Simulation Waveform** (showing reset pulse, clock toggling, cnt incrementing from 0 to 15, and reset behavior)
 
