@@ -1,5 +1,3 @@
-[counter.v](https://github.com/user-attachments/files/25019948/counter.v)
-[counter.v](https://github.com/user-attachments/files/25019838/counter.v)
 # VLSI Verification Projects
 
 Hello! I am Udai Jain, a first-year B.Tech student in VLSI Design & Technology (with AI/ML Minor) at Vellore Institute of Technology (VIT) Vellore – Class of 2029.  
@@ -11,6 +9,7 @@ I am building a strong foundation in digital design and functional verification 
 
 **Description**  
 A simple 4-bit synchronous up-counter that increments by 1 on every positive clock edge.  
+
 It resets to 0 when the active-high reset signal is asserted.
 
 **What I Learned**  
@@ -25,8 +24,8 @@ It resets to 0 when the active-high reset signal is asserted.
 - Simulator: ModelSim (Student/Free Edition)  
 
 **Source Files**:
-- [counter.v.txt](https://github.com/user-attachments/files/25015385/counter.v.txt)→ RTL design module
-- [tb_counter.v.txt](https://github.com/user-attachments/files/25015393/tb_counter.v.txt)→ Testbench with clock generation and stimulus
+- [counter.v](https://github.com/user-attachments/files/25015385/counter.v)→ RTL design module
+- [tb_counter.v](https://github.com/user-attachments/files/25015393/tb_counter.v)→ Testbench with clock generation and stimulus
   
 ## Design File :counter.v
     module counter (
@@ -59,8 +58,9 @@ It resets to 0 when the active-high reset signal is asserted.
     end
     endmodule
 
-## Waveform ScreenShot
+## Waveform ScreenS
 <img width="796" height="77" alt="waveform PNG" src="https://github.com/user-attachments/assets/c66fb1c7-2282-4ed1-8abb-34087e7a8873" />
+**Simulation Waveform** (showing reset pulse, clock toggling, cnt incrementing from 0 to 15, and reset behavior)
 
 **Goal**  
 Secure a Summer 2026 internship / trainee role in VLSI Verification or RTL Design (preferably in Bangalore – Maven Silicon, ChipXpert, or semiconductor startups).  
