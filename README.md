@@ -24,9 +24,9 @@
 **Folder: `./fifo-verification/`**  
 
 - **Overview**: 8-deep FIFO with read/write pointers and full/empty flags.  
-- **Design**: Dual-port RAM with flag logic and LED indicator on full condition.  
+- **Design**: Dual-port RAM with flag logic and a full status signal indicates when the FIFO becomes full.  
 - **Verification**: Testbench covers write, read, concurrent operations, and flag transitions.  
-- **Simulation**: ModelSim waveform validates full/empty flags and LED glow.  
+- **Simulation**: ModelSim waveform validates full/empty flags.  
 - **Learned**: Pointer arithmetic, flag generation, verification techniques.  
 
 ---
