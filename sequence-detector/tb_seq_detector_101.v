@@ -6,7 +6,7 @@ reg serial_in;
 wire detected;
 wire error;
 wire [6:0] seg_out;
-
+    
 seq_detector_101 dut (
     .clk(clk),
     .rst(rst),
