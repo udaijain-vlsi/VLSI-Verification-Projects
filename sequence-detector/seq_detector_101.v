@@ -6,7 +6,7 @@ module seq_detector_101 (
     output reg error,
     output reg [6:0] seg_out
 );
-
+    
 localparam S0 = 2'b00;
 localparam S1 = 2'b01;
 localparam S2 = 2'b10;
