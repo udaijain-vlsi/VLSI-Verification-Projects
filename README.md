@@ -1,92 +1,62 @@
-# VLSI Verification Projects
+# Udai Jain  
+**B.Tech VLSI Design & Technology | First Year**  
+**VIT Vellore, Tamil Nadu**  
+**Minor in AI/ML**  
 
-Hello! I am Udai Jain, a first-year B.Tech student in VLSI Design & Technology (with AI/ML Minor) at Vellore Institute of Technology (VIT) Vellore – Class of 2029.  
+> "Passionate about RTL design and verification. Building projects from basics to advanced FSMs. Seeking trainee internship for Summer 2026."
 
-This repository contains my learning projects in Verilog HDL and VLSI verification.  
-I am building a strong foundation in digital design and functional verification to pursue a career in VLSI (targeting verification / RTL design roles).
+---
 
-### Current Project: 4-bit Synchronous Counter Verification 
+## 📂 Projects  
 
-**Description**  
-A simple 4-bit synchronous up-counter that increments by 1 on every positive clock edge.  
+### 1. 4-bit Synchronous Counter  
+**Folder: `./counter-verification/`**  
 
-It resets to 0 when the active-high reset signal is asserted.
+- **Overview**: Clock-driven counter with reset and increment logic.  
+- **Design**: RTL module using Verilog non-blocking assignments.  
+- **Verification**: Full testbench with clock generation, stimulus, and reset scenarios.  
+- **Simulation**: ModelSim waveform shows correct increment up to overflow and reset behavior.  
+- **Learned**: Clock synchronization, testbench writing, basic verification flows.  
 
-**What I Learned**  
-- Writing Verilog modules with inputs, outputs, and sequential always blocks  
-- Using non-blocking assignments (<=) for proper register behavior  
-- Creating a basic testbench: clock generation, reset stimulus, and simple checking  
-- Simulating and debugging using ModelSim waveform viewer  
-- Understanding clock period, reset timing, and overflow behavior  
+---
 
-**Tools Used**  
-- Language: Verilog HDL  
-- Simulator: ModelSim (Student/Free Edition)  
+### 2. Synchronous FIFO Verification  
+**Folder: `./fifo-verification/`**  
 
-**Source Files**:
-- counter.v → RTL design module
-- tb_counter.v → Testbench with clock generation and stimulus
-  
-## Design File :counter.v
-    module counter (
-    input clk,
-    input rst,
-    output reg [3:0] cnt);
-    always @(posedge clk or posedge rst) 
-    begin
-    if (rst) cnt <= 4'b0000;
-    else     cnt <= cnt + 1;
-    end
-    endmodule
+- **Overview**: 8-deep FIFO with read/write pointers and full/empty flags.  
+- **Design**: Dual-port RAM with flag logic and LED indicator on full condition.  
+- **Verification**: Testbench covers write, read, concurrent operations, and flag transitions.  
+- **Simulation**: ModelSim waveform validates full/empty flags and LED glow.  
+- **Learned**: Pointer arithmetic, flag generation, verification techniques.  
 
-## Testbench File :tb_counter.v
-    module tb_counter;
-    reg clk, rst;
-    wire [3:0] cnt;
-    counter dut (.clk(clk), .rst(rst), .cnt(cnt));
-    initial begin
-    clk = 0;
-    forever #5 clk = ~clk;
-    end
-    initial begin
-    rst = 1;     
-    #15 rst = 0; 
-    #200 $finish; 
-    end
-    always @(posedge clk) begin
-    if (cnt >= 16) $display("ERROR: Counter overflow!");
-    end
-    endmodule
+---
 
-## Waveform Screenshot
-<img width="796" height="77" alt="waveform PNG" src="https://github.com/user-attachments/assets/c66fb1c7-2282-4ed1-8abb-34087e7a8873" />
-**Simulation Waveform** (showing reset pulse, clock toggling, cnt incrementing from 0 to 15, and reset behavior)
+### 3. Overlapping 101 Sequence Detector  
+**Folder: `./sequence-detector/`**  
 
-## Goal
-Secure a Summer 2026 internship / trainee role in VLSI Verification or RTL Design (preferably in Bangalore – Maven Silicon, ChipXpert,Mindgrove Technologies or semiconductor startups).  
-Actively learning Digital System Design, Electronic Devices, and Verilog through VIT curriculum.
+- **Overview**: Moore FSM detecting 101 pattern with overlapping support.  
+- **Design**: Four states (S0-S3) with error signaling and 7-segment output.  
+- **Verification**: Testbench injects valid/invalid sequences; checks detected, error, and display.  
+- **Simulation**: ModelSim waveform confirms overlapping detection and error handling.  
+- **Learned**: FSM design, combinational outputs, state transitions.  
 
-Open to feedback, suggestions, and guidance from seniors or professionals in the VLSI domain!
+---
 
-Thank you for visiting! 🚀 
+## 🔧 Tools & Environment  
+- **HDL**: Verilog  
+- **Simulator**: ModelSim (waveform analysis, testbench debugging)  
+- **IDE**: VS Code (syntax highlighting)  
+- **Version Control**: Git & GitHub (organized folders, commit history)  
 
-## Current Projects (Verilog HDL & Verification)
-- **4-bit Synchronous Counter**  
-  - RTL design with clock, reset, increment  
-  - Full testbench with clock generation and stimulus  
-  - Simulated in ModelSim – waveform shows correct increment & reset behavior  
-  - Files: counter.v, tb_counter.v, waveform.png  
-  - Learned: Non-blocking assignments, clock generation, basic verification  
+---
 
-- **Synchronous FIFO Verification**  
-  - 8-deep, 8-bit FIFO with full/empty flags  
-  - Custom twist: LED indicator on full condition  
-  - Simulated in ModelSim – waveform verifies write/read, flags & LED logic  
-  - Files: fifo-verification/fifo.v, tb_fifo.v, waveform.png  
-  - Learned: Pointer logic, flag generation, verification techniques  
+## 🎯 Career Goal  
+**Trainee Internship – Summer 2026**  
+Targeting: Maven Silicon, ChipXpert, VLSIGuru, MosChip.  
+Open to RTL verification, testbench writing, and FPGA basics.  
 
-## Added: Overlapping 101 Sequence Detector
-- FSM-based design with overlapping detection & error signaling  
-- Outputs: detected, error, 7-segment display ('D' / 'E')  
-- Simulated in ModelSim – waveform verified  
-- Files: sequence-detector/seq_detector_101.v, tb_seq_detector_101.v, waveform.png  
+---
+
+## 📞 Let’s Connect  
+Feedback, suggestions, or internship tips – always welcome.  
+DM on LinkedIn or GitHub.  
