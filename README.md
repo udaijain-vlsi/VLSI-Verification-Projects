@@ -70,10 +70,23 @@ Open to feedback, suggestions, and guidance from seniors or professionals in the
 
 Thank you for visiting! 🚀 
 
-Next up: Synchronous FIFO verification – adding in a week.
+## Current Projects (Verilog HDL & Verification)
+- **4-bit Synchronous Counter**  
+  - RTL design with clock, reset, increment  
+  - Full testbench with clock generation and stimulus  
+  - Simulated in ModelSim – waveform shows correct increment & reset behavior  
+  - Files: counter.v, tb_counter.v, waveform.png  
+  - Learned: Non-blocking assignments, clock generation, basic verification  
 
-### Added: Synchronous FIFO Verification
-- 8-deep, 8-bit wide FIFO with full/empty flags  
-- LED glows when FIFO is full (my custom twist)  
-- Files: fifo-verification/fifo.v, tb_fifo.v, waveform.png  
-- Simulation shows write/read operation and LED indicator on full condition  
+- **Synchronous FIFO Verification**  
+  - 8-deep, 8-bit FIFO with full/empty flags  
+  - Custom twist: LED indicator on full condition  
+  - Simulated in ModelSim – waveform verifies write/read, flags & LED logic  
+  - Files: fifo-verification/fifo.v, tb_fifo.v, waveform.png  
+  - Learned: Pointer logic, flag generation, verification techniques  
+
+## Added: Overlapping 101 Sequence Detector
+- FSM-based design with overlapping detection & error signaling  
+- Outputs: detected, error, 7-segment display ('D' / 'E')  
+- Simulated in ModelSim – waveform verified  
+- Files: sequence-detector/seq_detector_101.v, tb_seq_detector_101.v, waveform.png  
