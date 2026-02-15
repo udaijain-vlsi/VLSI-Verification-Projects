@@ -39,7 +39,14 @@
 - Learned: FSM design, state transitions, combinational logic  
 
 ---
+### 4. 4-bit ALU  
+**Folder: `./alu-verification/`**  
 
+- Arithmetic & logic operations with zero flag  
+- Simulated in ModelSim – waveform verified  
+- Learned: Combinational logic, flag generation
+
+---
 ## 🔧 Tools  
 - Verilog HDL  
 - ModelSim (simulation & waveform analysis)  
